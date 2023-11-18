@@ -1,0 +1,779 @@
+﻿$color-red: #FF0000;
+$color-yellow: #E6B645;
+$color-green: #38B349;
+$color-green-second: #289537;
+$color-black: #000;
+$color-white: #fff;
+$color-light: #F3F3F3;
+$color-smoke: #d3d3d3;
+$color-transparent: transparent;
+$max-width-phone: 991px;
+
+.line-clamp-1, .line-clamp-2, .line-clamp-3 {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-2 {
+    -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+    -webkit-line-clamp: 3;
+}
+
+header {
+    .header-top {
+        background-color: $color-black;
+        color: $color-white;
+
+        .background {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .5rem 0;
+
+            .left {
+                display: block;
+            }
+
+            @media (max-width: $max-width-phone) {
+                .left {
+                    display: none;
+                }
+            }
+
+            ul.right {
+                text-align: right;
+                margin-left: auto;
+                display: flex;
+                margin: 0;
+
+                li {
+                    list-style: none;
+                    padding: 0;
+                    padding-left: 1rem;
+
+                    a {
+                        color: $color-white;
+                        text-decoration: none;
+                        cursor: pointer;
+                        display: block;
+
+                        i {
+                            transition: 1s;
+                        }
+
+                        &:hover {
+                            i {
+                                margin-right: .5rem;
+                            }
+
+                            span {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header-bottom {
+        background-color: $color-yellow;
+        padding: 5px 0;
+
+        .box {
+            display: flex;
+            align-items: center;
+
+            .logo {
+                flex: 0 0 135px;
+                margin-right: 1rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .search {
+                flex: 1 1 auto;
+
+                @media (max-width: $max-width-phone) {
+                    display: none;
+                }
+
+                .input-group {
+                    input {
+                    }
+
+                    button {
+                        background-color: $color-green;
+                        color: $color-white;
+                        width: 60px;
+
+                        &:hover {
+                            background-color: $color-green-second;
+                        }
+                    }
+                }
+
+                ul.keywords-tag {
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+
+                    li {
+                        padding: .5rem 1rem .5rem 0;
+
+                        span {
+                            background: #4f4c4c;
+                            padding: 0 5px;
+                            border-radius: 5px;
+                            color: #fff;
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: #4f4c4c;
+                            font-size: 14px;
+
+                            &:hover {
+                                color: $color-black;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .contact {
+                flex: 0 0 auto;
+                width: fit-content;
+                margin-left: auto;
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    margin-left: 1rem;
+                    padding: 0;
+
+                    li {
+                        padding: 3px 0;
+                        white-space: nowrap;
+
+                        a {
+                            text-decoration: none;
+
+                            img {
+                                margin-right: 10px;
+                                width: 30px;
+                                height: 30px;
+                            }
+
+                            span {
+                                font-size: 15px;
+                                color: $color-black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main-menu {
+    background-color: #424242;
+    padding: 0;
+
+    .navbar-toggler {
+        background: #fff;
+        padding: 3px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .navbar-collapse {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: $color-white;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    padding: 10px;
+                    border-bottom: 3px solid $color-transparent;
+
+                    &.active, &:hover {
+                        border-bottom: 3px solid $color-yellow;
+                    }
+                }
+
+                &.dropdown {
+                    .dropdown-menu {
+                    }
+                }
+            }
+        }
+    }
+
+    @media all and (min-width: 992px) {
+        .nav-item .dropdown-menu {
+            display: none;
+        }
+
+        .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+
+        .nav-item .dropdown-menu {
+            margin-top: 0px;
+        }
+    }
+}
+
+.main-carousel {
+    .owl-dots {
+        margin-top: -40px !important;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #00000050;
+        padding: 0.25rem;
+        padding-bottom: 0;
+        border-radius: 0.75rem;
+
+        .owl-dot {
+            span {
+                background-color: $color-yellow;
+                width: 1rem;
+                height: 1rem;
+                border: 1px solid $color-smoke;
+            }
+
+            &.active {
+                span {
+                    background-color: $color-red;
+                }
+            }
+        }
+    }
+}
+
+.product-home {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    .product-home-carousel {
+        position: relative;
+
+        .owl-prev, .owl-next {
+            position: absolute;
+            background: $color-yellow !important;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            color: $color-white !important;
+        }
+
+        .owl-next {
+            left: auto;
+            right: 0;
+        }
+    }
+
+    .item {
+        border: 1px solid $color-smoke;
+        border-radius: .5rem;
+        text-align: center;
+        padding: .5rem;
+
+        .avatar {
+            img {
+                width: 80%;
+                display: block;
+                margin: auto;
+                transition: 1s;
+                aspect-ratio: 1/1;
+                object-fit: scale-down;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .title {
+            display: block;
+            text-decoration: none;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            color: $color-black;
+            font-weight: 600;
+            height: 48px;
+        }
+
+        .btn-view {
+            display: block;
+            margin-bottom: .5rem;
+            border-color: $color-green;
+        }
+
+        .btn-order {
+            display: block;
+            background-color: $color-green;
+        }
+    }
+}
+
+.heading {
+    position: relative;
+    padding-left: 20px;
+    margin: 1rem 0;
+
+    &, a {
+        color: $color-green;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        content: '';
+        width: 10px;
+        height: 30px;
+        border-radius: .5rem;
+        background-color: $color-yellow;
+    }
+}
+
+.cooking-home {
+    .cooking-home-carousel {
+        position: relative;
+
+        .owl-prev, .owl-next {
+            position: absolute;
+            background: $color-yellow !important;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            color: $color-white !important;
+        }
+
+        .owl-next {
+            left: auto;
+            right: 0;
+        }
+
+        .item {
+            text-align: center;
+
+            a:first-child {
+                font-weight: 600;
+                color: $color-black;
+                font-size: 15px;
+                text-transform: uppercase;
+                display: block;
+                margin-bottom: .5rem;
+                text-decoration: none;
+                display: -webkit-box !important;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            a:last-child {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+                aspect-ratio: 1/1;
+
+                img {
+                    width: 100%;
+                    transition: 1s;
+
+                    &:hover {
+                        transform: scale(1.1) rotate(5deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .footer-top {
+        background: #333333;
+        color: $color-light;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-top: 3rem;
+
+        h2 {
+            font-size: 25px;
+            margin-bottom: 2rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                padding: .5rem 0;
+
+                a {
+                    text-decoration: none;
+                    color: $color-light;
+
+                    i {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        background: #444444;
+        color: $color-light;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        .left-link {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline-block;
+
+                a {
+                    color: $color-light;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .right-social {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                margin-left: 1rem;
+
+                a {
+                    color: $color-light;
+                    text-decoration: none;
+
+                    i {
+                        font-size: 20px;
+                        transition: 1s;
+
+                        &:hover {
+                            transform: rotate(360deg);
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.calories-tool {
+    .calories-banner {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 25px;
+            font-weight: 700;
+            background: #ffb40050;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: 2;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            text-transform: uppercase;
+            text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+            transform: translateY(-50%);
+        }
+    }
+
+    .calories-desc {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        strong {
+            color: $color-yellow;
+            font-size: 18px;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        p {
+        }
+    }
+
+    .calories-input-info {
+        .personal-info {
+            h2 {
+                text-transform: uppercase;
+                color: $color-yellow;
+                font-size: 25px;
+                text-align: center;
+                font-weight: 600;
+            }
+
+            small {
+                font-size: 14px;
+                color: $color-yellow;
+                text-align: center;
+                display: block;
+            }
+
+            p {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            label.title {
+                font-weight: 700;
+                color: $color-yellow;
+                display: block;
+                font-size: 18px;
+                margin: 1.5rem 0 .5rem 0;
+
+                &:after {
+                    content: ':';
+                    margin-left: 5px;
+                }
+            }
+
+            .btn-group {
+                .btn {
+                    border-color: $color-yellow;
+                    color: $color-yellow;
+                    font-weight: 600;
+                }
+
+                input:checked + .btn {
+                    background-color: $color-yellow;
+                    color: $color-white;
+                }
+            }
+
+            .form-control {
+                border-color: $color-yellow;
+                font-weight: 600;
+                outline: none;
+                box-shadow: none;
+
+                &::placeholder {
+                    color: $color-smoke;
+                }
+            }
+        }
+
+        .active-info {
+            .button {
+                width: 150px;
+                background-color: $color-yellow;
+                color: $color-white;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding: .25rem .5rem;
+                border-radius: .25rem;
+                display: block;
+                margin: auto;
+                margin-bottom: .5rem;
+                text-align: center;
+            }
+
+            .top-row, .content-row {
+                border: 1px solid $color-yellow;
+                border-radius: .5rem;
+                background: #E6B64550;
+                padding: .5rem;
+                font-weight: 700;
+                color: $color-yellow;
+                margin-bottom: .5rem;
+            }
+
+            .content-row {
+                background: none;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.calories-index {
+    margin-bottom: 1rem;
+
+    .desc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        strong {
+            font-size: 25px;
+            color: $color-yellow;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .index {
+
+        .col-lg-6 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            strong {
+                font-size: 24px;
+                color: $color-yellow;
+            }
+
+            label {
+                font-size: 70px;
+                font-weight: 600;
+                color: $color-red;
+            }
+
+            span {
+                font-size: 24px;
+                font-weight: 500;
+                color: #cac8c8;
+            }
+        }
+    }
+
+    .result {
+        text-align: center;
+
+        span {
+            border: 10px solid $color-yellow;
+            border-radius: 10px;
+            background-color: $color-yellow;
+            color: $color-white;
+            font-size: 25px;
+            font-weight: 500;
+            padding: 0 1rem;
+            margin: auto;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+
+            strong {
+                color: $color-red;
+                font-size: 40px;
+                font-weight: 500;
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+.calories-summary {
+    text-align: center;
+
+    h4 {
+        background-color: #eed86a7b;
+        color: $color-yellow;
+        font-weight: 700;
+        border: 1px solid #ff8209;
+        border-radius: .5rem;
+        padding: .5rem;
+        margin: 1rem 0;
+    }
+
+    .border-box {
+        border: 1px solid #ff8209;
+        border-radius: .5rem;
+        padding: .25rem;
+        margin-bottom: 1rem;
+
+        .content-box-left {
+            border-right: 1px solid #ff8209;
+            min-height: 105px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .content-box-right {
+            min-height: 105px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        strong {
+            display: block;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        span {
+            display: block;
+            color: $color-smoke;
+        }
+
+        label {
+            display: block;
+            font-size: 30px;
+            font-weight: 600;
+            color: $color-red;
+        }
+    }
+}
+
+.calories-note{
+    text-align: center;
+    strong{
+        font-size: 20px;
+        font-weight: 600;
+        color: $color-yellow;
+    }
+
+    p{
+        margin-top: 5px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,711 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Calories Tool | Befresco Việt Nam</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/fontawesome.pro.6.0.0.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <section class="header-top">
+            <div class="container">
+                <div class="background">
+                    <div class="left">
+                        Befresco kính chào quý khách
+                    </div>
+                    <ul class="right">
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-hand-holding-usd"></i>
+                                <span>Tuyển đại lý</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-user-tie"></i>
+                                <span>Hỗ trợ khách hàng</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-earth-americas"></i>
+                                <span>Liên hệ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="header-bottom">
+            <div class="container">
+                <div class="box">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="assets/images/icon-logo/logo-top.png" />
+                        </a>
+                    </div>
+                    <div class="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Bạn cần tìm gì hôm nay...">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <ul class="keywords-tag">
+                            <li>
+                                <span>Tìm nhanh:</span>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-tag"></i>
+                                    Granola
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-tag"></i>
+                                    Thức uống
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-tag"></i>
+                                    Trái cây
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-tag"></i>
+                                    Các loại hạt
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/icon-logo/contact-phone-icon.png" />
+                                    <span>(0274) 387-99-39</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/icon-logo/contact-facebook-icon.png" />
+                                    <span>BefrescoVN</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/icon-logo/contact-email-icon.png" />
+                                    <span>we@befresco.vn</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <nav class="navbar navbar-expand-lg main-menu">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ngũ cốc Granola</a></li>
+                            <li><a class="dropdown-item" href="#">Bánh gạo lứt</a></li>
+                            <li><a class="dropdown-item" href="#">Nước trái cây</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Gia công sản phẩm
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Bánh gạo chocola</a></li>
+                            <li><a class="dropdown-item" href="#">Bánh gạo phô mai</a></li>
+                            <li><a class="dropdown-item" href="#">Bánh gạo chuối</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Công thức nấu ăn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog ẩm thực</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Calories tool</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Affiliate</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-circle-user"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Đăng ký/đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="#">Quản lý tài khoản</a></li>
+                            <li><a class="dropdown-item" href="#">Quản lý đơn hàng</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">
+                            <i class="fa-regular fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="calories-tool">
+            <section class="calories-banner">
+                <img src="assets/images/calory-tool/calory-cover.jpg" />
+                <h1>
+                    Công cụ tính chỉ số Calories - TDEE - BMR chuẩn Việt
+                </h1>
+            </section>
+            <section class="container-fluid calories-desc">
+                <strong>
+                    Bạn đang tìm kiếm một công cụ tính toán chính xác lượng calories cần thiết cho cơ thể của mình để duy trì và cải thiện sức khỏe?
+                </strong>
+                <p>
+                    Befresco Calories Tool cung cấp công cụ tính chỉ số Calories - TDEE - BMR chuẩn sẽ giúp bạn giải quyết tất cả những thắc mắc này! Với các công cụ tính toán chính xác và tiện lợi, bạn có thể tính toán được các chỉ số quan trọng như TDEE và BMR một cách nhanh chóng và dễ dàng.
+                    <br />
+                    Những thông tin quan trọng này sẽ giúp bạn định lượng chế độ ăn uống và hoạt động thể chất phù hợp để duy trì cân nặng lý tưởng và tăng cường sức khỏe.
+                </p>
+            </section>
+            <section class="container-fluid calories-input-info">
+                <div class="row">
+                    <div class="col-lg-6 personal-info">
+                        <h2>CÔNG CỤ TÍNH TDEE VÀ BMR ONLINE</h2>
+                        <small>Tính lượng calo cần thiết cho cơ thể bạn mỗi ngày</small>
+                        <p>Hãy cho Be Fresco một vài thông tin để tính cho bạn nhé:</p>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label class="title">Giới tính</label>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="btnradio" id="radio-gender-nam" autocomplete="off" checked>
+                                    <label class="btn btn-outline-primary" for="radio-gender-nam">Nam</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="radio-gender-nu" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="radio-gender-nu">Nữ</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="title">Chiều cao</label>
+                                <input class="form-control form-control-sm" id="input-chieu-cao" type="number" placeholder="Nhập chiều cao ... (cm)" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label class="title">Tuổi</label>
+                                <input class="form-control form-control-sm" id="input-tuoi" type="number" placeholder="Nhập tuổi ..." />
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="title">Cân nặng</label>
+                                <input class="form-control form-control-sm" id="input-can-nang" type="number" placeholder="Nhập cân nặng ... (kg)" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 active-info">
+                        <label class="button">CƯỜNG ĐỘ</label>
+                        <div class="top-row">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    Cường độ vận động
+                                </div>
+                                <div class="col-lg-6">
+                                    Mô tả
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" name="radio-van-dong" type="radio" id="radio-van-dong-it" checked>
+                                        <label class="form-check-label" for="radio-van-dong-it">
+                                            Vận động ít
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    Vận động cơ bản
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" name="radio-van-dong" type="radio" id="radio-van-dong-nhe">
+                                        <label class="form-check-label" for="radio-van-dong-nhe">
+                                            Vận động nhẹ
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    Tập luyện 1-3 buổi/tuần
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" name="radio-van-dong" type="radio" id="radio-van-dong-vua">
+                                        <label class="form-check-label" for="radio-van-dong-vua">
+                                            Vận động vừa
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    Tập luyện 4-5 buổi/tuần
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" name="radio-van-dong" type="radio" id="radio-van-dong-nhieu">
+                                        <label class="form-check-label" for="radio-van-dong-nhieu">
+                                            Vận động nhiều
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    Tập luyện 6-7 buổi/tuần
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" name="radio-van-dong" type="radio" id="radio-van-dong-cuc-nhieu">
+                                        <label class="form-check-label" for="radio-van-dong-cuc-nhieu">
+                                            Vận động cực nhiều
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    Cấp độ vận động viên
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container-fluid calories-index">
+                <div class="desc">
+                    <strong>CHỈ SỐ CALO CỦA BẠN</strong>
+                    <p>
+                        Dựa trên thông tin bạn đã cung cấp <br />
+                        Be Fresco đã tính ra các chỉ số calo của bạn như sau:
+                    </p>
+                </div>
+                <div class="row index">
+                    <div class="col-lg-6">
+                        <strong>
+                            BMR của bạn là:
+                        </strong>
+                        <label id="label-standard-bmr">
+                            0
+                        </label>
+                        <span>
+                            Calo / ngày
+                        </span>
+                    </div>
+                    <div class="col-lg-6">
+                        <strong>
+                            TDEE của bạn là:
+                        </strong>
+                        <label id="label-standard-tdee">
+                            0
+                        </label>
+                        <span>
+                            Calo / ngày
+                        </span>
+                    </div>
+                </div>
+                <div class="result">
+                    <span>
+                        GIỮ CÂN
+                        <strong id="strong-standard-calories">0</strong>
+                        CALO/NGÀY
+                    </span>
+                </div>
+            </section>
+            <section class="container-fluid calories-summary">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4>Giảm cân</h4>
+                        <div class="border-box">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="content-box-left">
+                                        <strong>
+                                            Giảm cân nhẹ
+                                        </strong>
+                                        <span>
+                                            (0.25kg/tuần)
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="content-box-right">
+                                        <label id="label-giam-can-nhe">
+                                            0
+                                        </label>
+                                        <strong>
+                                            Calories/ngày
+                                        </strong>
+                                        <span>
+                                            (85%)
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-box">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="content-box-left">
+                                        <strong>
+                                            Giảm cân
+                                        </strong>
+                                        <span>
+                                            (0.5kg/tuần)
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="content-box-right">
+                                        <label id="label-giam-can">
+                                            0
+                                        </label>
+                                        <strong>
+                                            Calories/ngày
+                                        </strong>
+                                        <span>
+                                            (71%)
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-box">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="content-box-left">
+                                        <strong>
+                                            Giảm cân nhanh
+                                        </strong>
+                                        <span>
+                                            (1kg/tuần)
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="content-box-right">
+                                        <label id="label-giam-can-nhanh">
+                                            0
+                                        </label>
+                                        <strong>
+                                            Calories/ngày
+                                        </strong>
+                                        <span>
+                                            (42%)
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4>Tăng cân</h4>
+                        <div class="border-box">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="content-box-left">
+                                        <strong>
+                                            Tăng cân nhẹ
+                                        </strong>
+                                        <span>
+                                            (0.25kg/tuần)
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="content-box-right">
+                                        <label id="label-tang-can-nhe">
+                                            0
+                                        </label>
+                                        <strong>
+                                            Calories/ngày
+                                        </strong>
+                                        <span>
+                                            (115%)
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-box">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="content-box-left">
+                                        <strong>
+                                            Tăng cân
+                                        </strong>
+                                        <span>
+                                            (0.5kg/tuần)
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="content-box-right">
+                                        <label id="label-tang-can">
+                                            0
+                                        </label>
+                                        <strong>
+                                            Calories/ngày
+                                        </strong>
+                                        <span>
+                                            (129%)
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-box">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="content-box-left">
+                                        <strong>
+                                            Tăng cân nhanh
+                                        </strong>
+                                        <span>
+                                            (1kg/tuần)
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="content-box-right">
+                                        <label id="label-tang-can-nhanh">
+                                            0
+                                        </label>
+                                        <strong>
+                                            Calories/ngày
+                                        </strong>
+                                        <span>
+                                            (158%)
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container-fluid calories-note">
+                <strong>Lưu ý</strong>
+                <p>Vui lòng tham khảo ý kiến bác sĩ khi bạn muốn giảm mức >= 1kg/tuần. Vì chúng yêu cầu bạn tiêu thụ ít hơn mức khuyến nghị tối thiểu 1,200 calo/ngày.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <section class="container-fluid footer-top">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h2>Befresco Việt Nam</h2>
+                    <div class="ratio ratio-1x1">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.7726638924396!2d106.67290467521498!3d10.980524689180898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d19001c7ab5f%3A0x69ced967c62eb5ff!2sBEFRESCO%20LTD!5e0!3m2!1sen!2s!4v1697894859291!5m2!1sen!2s" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h2>Liên hệ</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>(0274) 387-99-39</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>BefrescoVN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                                <span>fresco_healthynutrition</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-pinterest"></i>
+                                <span>befresco.vn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-envelope"></i>
+                                <span>befresco.vn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>82/06 Trần Văn Ơn, TP. Thủ Dầu Một, Tỉnh Bình Dương ( Click để xem trên bản đồ)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <h2>Hỗ trợ</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>Câu chuyện của Be Fresco VN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>Tính năng Website</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>Mua hàng hóa thật dễ dàng ngay tại Website Be Fresco VN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>Chính sách đổi trả và quyền lợi tại Be Fresco VN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>Giao nhận và thanh toán</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>Phong cách sống xanh cùng Be Fresco VN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>Điều khoản sử dụng và quyền riêng tư</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>Gia nhập đội ngũ Be Fresco VN</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid footer-bottom">
+            <ul class="left-link">
+                <li>
+                    <a href="#">© Copyright by Befresco Việt Nam</a>
+                    <i class="fas fa-caret-right"></i>
+                </li>
+                <li>
+                    <a href="#">Trang chủ</a> |
+                </li>
+                <li>
+                    <a href="#">Công thức nấu ăn</a> |
+                </li>
+                <li>
+                    <a href="#">Blog dinh dưỡng</a> |
+                </li>
+                <li>
+                    <a href="#">Đơn hàng của tôi</a> |
+                </li>
+                <li>
+                    <a href="#">Tài khoản</a> |
+                </li>
+                <li>
+                    <a href="#">Hỗ trợ</a> |
+                </li>
+                <li>
+                    <a href="#">Liên hệ</a>
+                </li>
+            </ul>
+            <ul class="right-social">
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+
+    <section id="script">
+        <script src="assets/js/bootstrap.bundle.js"></script>
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <script src="assets/js/owl.carousel.js"></script>
+        <script src="assets/js/script.js"></script>
+    </section>
+</body>
+</html>
